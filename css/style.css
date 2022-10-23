@@ -105,26 +105,24 @@ body {
 .clear {
   grid-area: clear;
 }
-.equal {
+.calculator-keys .equal {
   grid-area: equal;
   background-color: var(--orange-400);
 }
 
-.equal:active {
+.calculator-keys .equal:active {
   background-color: var(--orange-500);
 }
 
-.operator {
+[data-type="operator"] {
   background-color: var(--grey-100);
 }
-.operator:active,
-.operator:focus {
-  background-color: var(--grey-200);
-}
 
-.number {
+[data-type="number"] {
   background-color: #fff;
 }
-.number:active {
+
+[data-type="operator"]:active,
+[data-type="number"]:active {
   background-color: var(--grey-200);
 }
